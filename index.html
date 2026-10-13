@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Metadata describes the site to browsers and search engines. defer runs app.js after the HTML is ready. -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn website components by trying them. Turn everyday descriptions into clear AI coding prompts with this visual component guide.">
+<title>Element Atlas · A field guide for vibe coders and beginners in coding</title>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer>
+</script>
+</head>
+<body>
+
+<!-- Site identity and section links. Each href beginning with # points to a matching section id. -->
+<header class="site-header">
+<a class="brand" href="#">
+<span class="brand-mark">ea<span>↗</span>
+</span>
+<span>element atlas<span class="brand-sub">A FIELD GUIDE FOR VIBE CODERS AND BEGINNERS IN CODING</span>
+</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="#components">Components</a>
+<a href="#templates">Templates</a>
+<a href="#method">How to prompt <span>↗</span>
+</a>
+</nav>
+</header>
+<main>
+
+<!-- Introduction and a decorative website illustration. The illustration button opens the button guide. -->
+<section class="hero">
+<div>
+<p class="eyebrow">
+<span class="dot">
+</span> LESS GUESSING. MORE BUILDING.</p>
+<h1>You’ve seen it.<br>Now <em>name it.</em>
+</h1>
+<p class="hero-copy">The little pieces behind every great website.<br>Explore them, understand them, and tell your AI exactly what to build.</p>
+<a class="primary" href="#components">Explore the components <span>↗</span>
+</a>
+<p class="small-note">Made for beginners. Built for your next idea.</p>
+</div>
+<div class="hero-art" aria-label="Illustration of a website made from labelled components">
+<div class="art-label">A WEBSITE IS A COLLECTION OF SMALL IDEAS</div>
+<div class="mock-browser">
+<div class="browser-top">
+<span>● ● ●</span>
+<span>your-next-idea.site</span>
+</div>
+<div class="mock-nav">
+<strong>studio.</strong>
+<span>Work &nbsp; About &nbsp; <b>Let’s talk ↗</b>
+</span>
+</div>
+<div class="mock-body">
+<span class="mini-tag">A LITTLE INSPIRATION</span>
+<h2>Make something<br>worth sharing.</h2>
+<div class="mock-lines">
+</div>
+<button type="button" id="hero-demo">Start a project ↗</button>
+</div>
+<div class="mock-cards">
+<div>01<br>
+<strong>Find your idea</strong>
+</div>
+<div>02<br>
+<strong>Build it together</strong>
+</div>
+</div>
+</div>
+<span class="annotation ann-nav">↙ Navbar</span>
+<span class="annotation ann-button">Button ↗</span>
+<span class="annotation ann-card">↖ Card</span>
+<div class="art-footer">
+<span>12 building blocks</span>
+<span>∞ possibilities</span>
+</div>
+</div>
+</section>
+
+<!-- Component library: app.js fills #filters and #grid from the components array. Keep these ids in sync with JavaScript. -->
+<section id="components" class="library">
+<div class="section-heading">
+<div>
+<p class="eyebrow">YOUR VISUAL VOCABULARY</p>
+<h2>Small pieces. Big possibilities.</h2>
+</div>
+<p>Don’t know the name? Search what it does.</p>
+</div>
+<div class="toolbar">
+<label class="search">
+<span aria-hidden="true">⌕</span>
+<input id="search" type="search" placeholder="Try ‘popup before deleting’" aria-label="Search components">
+</label>
+<div id="filters" class="filters" aria-label="Filter components">
+</div>
+</div>
+<div class="results-line">
+<span id="result-count">
+</span>
+<span>Click a component to learn & try it <span aria-hidden="true">↗</span>
+</span>
+</div>
+<div id="grid" class="component-grid">
+</div>
+<p id="empty" hidden>No matches yet. Try “menu”, “message”, or “form”. <button class="text-button" id="reset">Clear search</button>
+</p>
+</section>
+
+<!-- Two template previews. data-template tells JavaScript which explanation and prompt to open. -->
+<section id="templates" class="templates">
+<div class="section-heading">
+<div>
+<p class="eyebrow">PUT THE PIECES TOGETHER</p>
+<h2>From component to complete page.</h2>
+</div>
+<p>Two starter layouts. Every part explained.</p>
+</div>
+<div class="template-grid">
+<button class="template-card" data-template="landing">
+<div class="template-preview landing-preview">
+<div class="tiny-nav">KIN STUDIO <span>About &nbsp; Work &nbsp; Contact</span>
+</div>
+<h3>Good ideas<br>deserve a home.</h3>
+<span class="tiny-cta">Explore our work ↗</span>
+<div class="tiny-cards">
+<span>✳</span>
+<span>↗</span>
+<span>◉</span>
+</div>
+</div>
+<div class="template-caption">
+<div>
+<span class="eyebrow">01 / INTRODUCE AN IDEA</span>
+<h3>Simple landing page</h3>
+<p>Navbar + cards + call to action</p>
+</div>
+<span class="circle-arrow">↗</span>
+</div>
+</button>
+<button class="template-card" data-template="event">
+<div class="template-preview event-preview">
+<div>
+<span class="mini-tag">LEARN. MAKE. SHARE.</span>
+<h3>Your next idea<br>starts here.</h3>
+<p>Elimika · Build session</p>
+</div>
+<div class="tiny-form">
+<strong>Save your seat</strong>
+<span>Your name</span>
+<span>Email address</span>
+<b>Join the session ↗</b>
+</div>
+</div>
+<div class="template-caption">
+<div>
+<span class="eyebrow">02 / BRING PEOPLE TOGETHER</span>
+<h3>Event registration page</h3>
+<p>Inputs + select + checkbox + feedback</p>
+</div>
+<span class="circle-arrow">↗</span>
+</div>
+</button>
+</div>
+</section>
+
+<!-- Static learning content: edit these steps to change the prompting advice. -->
+<section id="method" class="method">
+<div>
+<p class="eyebrow">THINK BEFORE YOU PROMPT</p>
+<h2>Describe the behaviour.<br>Then ask for the build.</h2>
+<p>A component name is a starting point. Tell your agent who it serves, what happens, and what a successful result looks like.</p>
+</div>
+<ol>
+<li>
+<span>01</span>
+<div>
+<h3>Start with the problem</h3>
+<p>“People need to confirm before deleting their project.”</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Name the component & its states</h3>
+<p>“Use a confirmation dialog with Cancel and Delete. Disable Delete while saving.”</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Make the result testable</h3>
+<p>“Cancel keeps the project. Delete only runs after confirmation. Show an error if it fails.”</p>
+</div>
+</li>
+</ol>
+</section>
+<aside class="learning-note">✳ <span>
+<strong>Clearer prompts, fewer retries.</strong> Token savings depend on your agent and task. Try one small change, check the result, then move on.</span>
+</aside>
+</main>
+<!-- Personal programme credit. Replace this sentence with your preferred name or programme title when ready. -->
+<footer>
+<a class="brand" href="#">element atlas <span>↗</span>
+</a>
+<p>© 2026 Element Atlas · Created by <a href = "https://www.linkedin.com/in/benedict-kiprono-159532338">Benedict Kiprono</a> </p>
+<a href="#method">Learn how to prompt ↗</a>
+</footer>
+
+<!-- Reusable native dialog. JavaScript inserts the selected guide into #detail-body. The separate toast announces temporary results. -->
+<dialog id="detail">
+<div class="dialog-top">
+<span id="detail-label" class="eyebrow">
+</span>
+<button id="close" class="close" aria-label="Close guide">×</button>
+</div>
+<div id="detail-body">
+</div>
+</dialog>
+<div id="toast" role="status" class="toast" hidden>
+</div>
+</body>
+</html>
