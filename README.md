@@ -217,3 +217,9 @@ Build what helps learners understand and act.
 Element Atlas aims to give beginners enough vocabulary and practical understanding to make clearer decisions, direct their coding agents, and assess what those agents produce.
 
 **See the component. Understand the choice. Build with purpose.**
+
+## Interactive edition
+
+Includes live component demos, editable playgrounds (button, toast, dialog, accordion, input), a prompt builder for all 12 guides, six learning challenges, a clickable page anatomy explorer, and a persistent build brief basket. Briefs and theme settings are saved only in browser local storage; no account or network submission is used. The neutral interface includes a sidebar, system sans-serif typography, and light/dark themes.
+
+Validated with Node syntax checking and 13 headless Chrome interaction checks.

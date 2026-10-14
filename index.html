@@ -26,9 +26,9 @@
 <a href="#templates">Templates</a>
 <a href="#method">How to prompt <span>↗</span>
 </a>
-</nav>
+</nav><button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
 </header>
-<main>
+<aside class="sidebar"><p class="eyebrow">WORKSPACE</p><a href="#components">Component library</a><a href="#templates">Page templates</a><a href="#challenges">Practice challenges</a><a href="#anatomy">Page anatomy</a><a href="#brief">Build brief <span id="basket-count">0</span></a><p class="eyebrow">COMPONENTS</p><div id="side-components"></div><p class="sidebar-note">See it. Name it. Build it.<br>A field guide for your next idea.</p></aside><main>
 
 <!-- Introduction and a decorative website illustration. The illustration button opens the button guide. -->
 <section class="hero">
@@ -201,7 +201,7 @@
 <aside class="learning-note">✳ <span>
 <strong>Clearer prompts, fewer retries.</strong> Token savings depend on your agent and task. Try one small change, check the result, then move on.</span>
 </aside>
-</main>
+<section id="challenges" class="learning-section"><p class="eyebrow">PRACTICE</p><h2>Which component fits?</h2><p>Choose a solution, then discover why it works.</p><div id="challenge-box"></div></section><section id="anatomy" class="learning-section"><p class="eyebrow">EXPLORE A PAGE</p><h2>The anatomy of an idea.</h2><p>Click a labelled part to explore its role and open its guide.</p><div class="anatomy-page"><button data-anatomy="navbar" class="anatomy-nav">01 · Navbar <span>Studio / About / Contact</span></button><div class="anatomy-hero"><p class="eyebrow">YOUR NEXT PROJECT</p><h3>Small pieces.<br>Something meaningful.</h3><button data-anatomy="button" class="primary">02 · Call to action →</button></div><div class="anatomy-cards"><button data-anatomy="card">03 · Card<br><small>One idea, clearly explained.</small></button><button data-anatomy="input">04 · Text input<br><small>A labelled place to enter information.</small></button><button data-anatomy="accordion">05 · Accordion<br><small>Answers revealed when needed.</small></button></div></div><div id="anatomy-info" role="status">Select a part of the page above.</div></section><section id="brief" class="learning-section"><p class="eyebrow">FROM EXPLORING TO BUILDING</p><h2>Your build brief.</h2><p>Collect components from their guides and combine your requirements into one prompt. Saved on this device only.</p><label for="brief-project">Project and audience</label><input id="brief-project" placeholder="A club website for students"><div id="basket"></div><div class="brief-actions"><button id="export-brief" class="primary">Generate project prompt →</button><button id="clear-brief">Clear components</button></div><pre id="brief-output" tabindex="0"></pre><button id="copy-brief" hidden>Copy project prompt</button><p id="brief-copy-status" role="status"></p></section></main>
 <!-- Personal programme credit. Replace this sentence with your preferred name or programme title when ready. -->
 <footer>
 <a class="brand" href="#">element atlas <span>↗</span>
