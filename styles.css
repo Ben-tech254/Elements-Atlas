@@ -1,16 +1,7 @@
-/*
-  500;
-  600;
-  700&family=Manrope:wght@400;
-  500;
-  600;
-  700;
-  800&display=swap');*/
-  500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-  
-
 /* DESIGN TOKENS: change these colours here to restyle the whole site. var(--ink) reuses a token. */
 :root {
+  --font-body:'Inter',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-heading:'Geist',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   --ink:#172b25;
   --muted:#65736b;
   --paper:#fafbf7;
@@ -32,7 +23,7 @@ body {
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family:'DM Sans',Arial,sans-serif
+  font-family:var(--font-body)
 }
 button,input,select {
   font:inherit
@@ -129,7 +120,7 @@ h1,h2,h3,p {
   margin-top:0
 }
 h1 {
-  font-family:Manrope,Arial,sans-serif;
+  font-family:var(--font-heading);
   font-size:clamp(48px,5.6vw,76px);
   line-height:1.08;
   letter-spacing:-4px;
@@ -311,7 +302,7 @@ section {
   font-size:28px;
   letter-spacing:-1px;
   margin:0;
-  font-family:Manrope,Arial,sans-serif
+  font-family:var(--font-heading)
 }
 .section-heading>p {
   font-size:12px;
@@ -853,7 +844,7 @@ dialog::backdrop {
 }
 .prompt-box pre {
   white-space:pre-wrap;
-  font:12px/1.8 'DM Sans',Arial,sans-serif;
+  font:12px/1.8 var(--font-body);
   color:#405348;
   margin:16px 0 0
 }
@@ -1118,7 +1109,7 @@ dialog {
 /* Neutral documentation interface inspired by shadcn/ui. */
 :root{--ink:#18181b;--muted:#71717a;--paper:#fff;--line:#e4e4e7;--lime:#f4f4f5;--green:#27272a;--surface:#fafafa;color-scheme:light}
 :root[data-theme=dark]{--ink:#fafafa;--muted:#a1a1aa;--paper:#09090b;--line:#27272a;--lime:#27272a;--green:#e4e4e7;--surface:#18181b;color-scheme:dark}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px}h1,h2,h3{font-family:inherit!important}button,input,select,textarea{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+body{font-family:var(--font-body);font-size:14px}h1,h2,h3,.brand{font-family:var(--font-heading)}button,input,select,textarea{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 .site-header{height:68px;max-width:none;padding:0 32px;position:sticky;top:0;background:var(--paper);z-index:10;gap:24px}.site-header nav{margin-left:auto}.brand{font-size:18px;letter-spacing:-.6px}.brand-mark{background:var(--ink);color:var(--paper);font-size:18px;padding:7px 9px;border-radius:6px}.brand-sub{letter-spacing:1px;font-size:7px}#theme-toggle{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:6px;width:34px;height:34px}
 .sidebar{position:fixed;top:68px;bottom:0;left:0;width:224px;border-right:1px solid var(--line);padding:32px 20px;overflow:auto;background:var(--paper)}.sidebar>a,.sidebar button{display:block;width:100%;text-align:left;padding:9px 12px;border:0;border-radius:6px;background:transparent;color:var(--muted);font-size:13px}.sidebar>a:hover,.sidebar button:hover{background:var(--surface);color:var(--ink)}.sidebar .eyebrow{margin:22px 12px 10px;color:var(--ink);letter-spacing:.5px}.sidebar .eyebrow:first-child{margin-top:0}.sidebar-note{font-size:11px;color:var(--muted);line-height:1.8;margin:28px 12px}#basket-count{float:right;border:1px solid var(--line);border-radius:4px;padding:0 5px}
 main{margin-left:224px;max-width:1250px;padding:0 48px}.hero{padding:64px 0;gap:40px}h1{font-size:clamp(40px,4.7vw,64px);letter-spacing:-3px}.hero-copy{font-size:15px}.dot{background:var(--ink)}.hero-art{transform:none;border-radius:10px;background:var(--surface)}.annotation{background:var(--paper);border-color:var(--line);box-shadow:none}.primary,.sample .dark,.demo-area .dark,.prompt-heading button{background:var(--ink);color:var(--paper);border-color:var(--ink);border-radius:6px}.primary:hover{opacity:.85;background:var(--ink)}.mock-browser,.mock-body,.mock-nav,.mock-cards>div,.browser-top{background:var(--paper);color:var(--ink)}.mock-body button{background:var(--ink);color:var(--paper)}.mock-lines{opacity:.5}.filters button.active{background:var(--ink);color:var(--paper)}.search,.component-card,.template-card,.prompt-box{background:var(--paper)}.search input{color:var(--ink)}.component-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px #00000008}.card-demo,.component-card:nth-child(3n+2) .card-demo,.component-card:nth-child(3n) .card-demo{background:var(--surface)}.card-copy p:last-child{font-size:13px}.section-heading h2{font-size:26px}.sample-nav,.sample-menu,.sample-card,.sample-toast,.sample-dialog,.sample-accordion,.sample input,.sample select,.preview-field,.preview-button,.tiny-form,.live-menu,.demo-area details{background:var(--paper);color:var(--ink);border-color:var(--line)}.sample-alert{background:var(--surface);border-color:var(--line)}.sample-tabs{background:var(--line)}.sample-tabs .chosen{background:var(--paper)}.landing-preview,.event-preview,.method,.demo-area{background:var(--surface)}.method{border:1px solid var(--line)}.prompt-box pre{color:var(--ink)}dialog{background:var(--paper)}.close,.sample button,.demo-area button{background:var(--paper);color:var(--ink);border-color:var(--line)}.tab-buttons button[aria-selected=true]{background:var(--ink);color:var(--paper)}.demo-area input:not([type=checkbox]),.demo-area select{background:var(--paper);color:var(--ink);border-color:var(--line)}.tiny-cards span{background:var(--paper)}.toast{background:var(--ink);color:var(--paper)}footer{margin-left:224px;max-width:none}.learning-section{border-top:1px solid var(--line);padding:48px 0}.learning-section>p,.learning-section label{color:var(--muted);line-height:1.7}.learning-section h2{font-size:28px;letter-spacing:-1px}.playground{border:1px solid var(--line);border-radius:8px;padding:20px;margin:20px 0}.play-heading,.challenge-top{display:flex;justify-content:space-between;gap:16px;align-items:center}.play-heading h3{margin:0}.play-heading .eyebrow{margin-bottom:6px;color:var(--muted)}.badge{border:1px solid var(--line);border-radius:5px;padding:4px 8px;font-size:11px;white-space:nowrap}.builder-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}label{font-size:12px}input,textarea,select{color:var(--ink)}.builder-grid input,.builder-grid textarea,#component-settings input,#component-settings select,#brief-project{display:block;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);margin-top:7px}.builder-grid textarea{resize:vertical}#component-settings{display:flex;gap:16px;margin:16px 0}#component-settings label{flex:1}.brief-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.brief-actions button:not(.primary),#copy-brief,#next-challenge,.challenge-options button,.basket-row button{border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--ink);background:var(--paper)}#challenge-box{border:1px solid var(--line);padding:28px;border-radius:10px;margin-top:24px}#challenge-box h3{margin-top:24px;font-size:20px;line-height:1.5}.challenge-options{display:flex;gap:12px;flex-wrap:wrap}.challenge-options button.correct{border-color:var(--ink);background:var(--surface);opacity:1}.challenge-options button:disabled{cursor:default}.anatomy-page{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:24px}.anatomy-nav{display:flex;justify-content:space-between;width:100%;padding:20px;border:0;border-bottom:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left}.anatomy-nav span{color:var(--muted);font-size:12px}.anatomy-hero{padding:40px}.anatomy-hero h3{font-size:36px;letter-spacing:-1.5px}.anatomy-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px}.anatomy-cards button{background:var(--paper);color:var(--ink);border:1px dashed var(--muted);border-radius:6px;padding:24px;text-align:left;line-height:1.8}.anatomy-cards small{color:var(--muted)}#anatomy-info{padding:16px 0;color:var(--muted)}.basket-row{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}.basket-row p{white-space:pre-wrap;font-size:12px;color:var(--muted);line-height:1.7;margin:8px 0}.basket-row button{flex-shrink:0}.empty-basket{padding:24px;background:var(--surface);border-radius:8px;color:var(--muted)}#brief-output{white-space:pre-wrap;line-height:1.8;background:var(--surface);border-radius:8px;padding:20px;font-size:12px}#brief-output:empty{display:none}.success{color:#15803d}.error{color:#dc2626}[data-theme=dark] .success{color:#86efac}[data-theme=dark] .error{color:#fca5a5}
